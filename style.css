@@ -1,0 +1,66 @@
+/* JavaScript Interactivity */
+
+.interactive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+}
+
+.interactive-card {
+    padding: var(--space-3);
+    background-color: var(--light-blue);
+    border: 2px solid var(--navy);
+    border-radius: 12px;
+}
+
+
+/* Requirement 2: Live style change */
+
+.name-preview {
+    margin-top: var(--space-2);
+    padding: var(--space-2);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.name-preview-active {
+    color: var(--navy);
+    background-color: var(--light-gold);
+    border-color: var(--gold);
+    font-weight: bold;
+}
+
+
+/* Dynamic list */
+
+#skills-list {
+    margin-top: var(--space-3);
+}
+
+#skills-list li {
+    margin-bottom: var(--space-2);
+}
+
+.dynamic-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.remove-skill-button {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .interactive-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
